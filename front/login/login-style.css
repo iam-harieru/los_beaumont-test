@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible Bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible Italic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible Bold Italic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    width: 50rem;
+    margin: 30px auto;
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.arrow {
+  border: none;
+  cursor: pointer;
+}
+
+.logo-row img {
+    width: auto;
+    max-width: 260px;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: #333;
+    align-self: flex-start;
+}
+
+p {
+    width: auto;
+    margin-bottom: 50px;
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+input {
+    width: auto;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #080808;
+    border-radius: 10px;
+}
+input::placeholder {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 18px
+}
+
+.confirm {
+    display: flex;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    width: 90%;
+    border-radius: 12px;
+    font-size: 18px;
+    align-self: center;
+    justify-content: center;
+    padding: 14px;
+    margin: 0px 0px 20px 0px;
+    background-color: #f1f1f1;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.confirm:hover {
+    cursor: pointer;
+    background-color: #C3C2C0;
+    transform: scale(1.05);
+}
+
+.text {
+  color:gray;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.logs {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 220px;
+  min-width: 0;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #080808;
+  border-radius: 15px;
+  padding: 10px;
+  width: 1.5rem;
+  transition: background-color 1s ease;
+}
+
+.box:hover {
+  background-color: #e2e2e2;
+}
+
+.box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.box svg {
+  flex-shrink: 0;
+}
+
+.logs2 {
+  display: none;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 0;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #080808;
+  border-radius: 55px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  transition: background-color 1s ease;
+}
+
+.box2:hover {
+  background-color: #e2e2e2;
+}
+
+.cadastro {
+  margin-top: 40px;
+  background-color: rgb(236, 231, 231);
+  border: 1px solid #080808;
+  border-radius: 30px;
+  padding: 10px 70px;
+  transition: background-color border 1s ease-in;
+}
+
+.cadastro:hover {
+  background-color: #C3C2C0;
+  border: 1px solid #ff5e5e
+}
+
+.logosw {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 846px) {
+  body {
+    height: 90vh;
+    width: auto;
+  }
+
+  .logs {
+    display: none;
+  }
+
+  .logs2 {
+    display: flex;
+  }
+}
