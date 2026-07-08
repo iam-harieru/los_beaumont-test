@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Beaumont</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="/los-beaumont/site/web.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header style="background: #f2f2f2;">
+        <nav>
+            <div class="nav-inner">
+                <div class="nav-left">
+                    <button class="mobile-menu-btn" aria-label="Abrir menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <img class="logo" src="/images/losbeaumontlogo.png" alt="Logo Los Beaumont">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#propriedade"><b>Anuncie propriedade</b></a></li>
+                    <li><a href="#ajuda"><img src="/images/ajudando.png" alt="Ajuda"></a></li>
+                    <li><a class="login" href="/los-beaumont/login/login.html"><b>Cadastre-se / Logar</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <img class="bg" src="/images/bannerlos.png" alt="Banner do site">
+
+        <div class="overlay">
+            <img class="titulo" src="/images/losbeaumonttext.png" alt="Los Beaumont">
+            <p>Explore seu tipo de quarto, anuncie propriedade e reserve com descontos e ofertas</p>
+        </div>
+    </section>
+
+    <!-- ===== BUSCA ===== -->
+    <div class="search">
+
+        <div class="search-box">
+            <img src="/images/pin.png" alt="">
+            <div>
+                <h6>Para onde você vai?</h6>
+                <input type="text" name="destination" placeholder="Digite o destino">
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="search-box">
+            <img src="/images/calendar.png" alt="">
+            <div>
+                <h6>Entrada / Saída</h6>
+                <input type="date" name="date">
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="search-box">
+            <img src="/images/group.png" alt="">
+            <div>
+                <h6>Hóspedes e quartos</h6>
+                <input type="number" name="guests" placeholder="4 hóspedes, 2 quartos">
+            </div>
+        </div>
+
+        <button class="search-btn">
+            <img src="/images/search.png" alt="Buscar">
+        </button>
+
+    </div>
+
+    <!-- ===== BUSCA EXTRA ===== -->
+    <div class="search-extra">
+        <div class="item-extra">
+            <input type="checkbox" name="business_travel" id="business_travel">
+            <label for="business_travel">
+                <p>Viajando a negócios?</p>
+                <p><small>Isso ajuda ao entender suas preferências de viagem.</small></p>
+            </label>
+        </div>
+    </div>
+
+    <!-- ===== PARCEIROS ===== -->
+    <div class="info">
+        <p><i>Parceria com <br> 100+ sites</i></p>
+        <img src="/images/booking.png" alt="Logo da Booking.com">
+        <img src="/images/hoteis.png" alt="Logo da Hoteis.com">
+        <img src="/images/expedia.png" alt="Logo da Expedia">
+        <img src="/images/vrbo.png" alt="Logo da Vrbo">
+        <img src="/images/all.png" alt="Logo da Accor Live Limitless">
+        <img src="/images/trip.png" alt="Logo da Trip.com">
+        <img src="/images/decolar.png" alt="Logo da Decolar">
+    </div>
+
+    <!-- ===== ASSINATURA ===== -->
+    <div class="assinatura">
+        <img src="/images/mulher.jpg" alt="Mulher aproveitando o hotel">
+        <h1>BeauClub: o exclusivo clube de assinatura!</h1>
+        <p>Tenha momentos de uma realidade exclusiva pensado para você</p>
+        <a href="#">Assine já</a>
+    </div>
+
+    <!-- ===== CIDADES ===== -->
+    <div class="text">
+        <h1>Encontre o seu tipo especial para sua próxima estadia</h1>
+    </div>
+
+    <div class="citie-content">
+
+        <div class="cities-container">
+            <button class="nav-btn left" id="left-btn" onclick="scrollCities(-500)">&#10094;</button>
+
+            <div class="cities" id="cities">
+                <a href="#" onclick="selecionarCidade('sao-paulo', this)">São Paulo</a>
+                <a href="#" onclick="selecionarCidade('rio-de-janeiro', this)">Rio de Janeiro</a>
+                <a href="#" onclick="selecionarCidade('curitiba', this)">Curitiba</a>
+                <a href="#" onclick="selecionarCidade('maceio', this)">Maceió</a>
+                <a href="#" onclick="selecionarCidade('salvador', this)">Salvador</a>
+                <a href="#" onclick="selecionarCidade('belo-horizonte', this)">Belo Horizonte</a>
+                <a href="#" onclick="selecionarCidade('fortaleza', this)">Fortaleza</a>
+                <a href="#" onclick="selecionarCidade('porto-alegre', this)">Porto Alegre</a>
+                <a href="#" onclick="selecionarCidade('recife', this)">Recife</a>
+                <a href="#" onclick="selecionarCidade('natal', this)">Natal</a>
+                <a href="#" onclick="selecionarCidade('florianopolis', this)">Florianópolis</a>
+            </div>
+
+            <button class="nav-btn right" id="right-btn" onclick="scrollCities(500)">&#10095;</button>
+        </div>
+
+        <div class="city-image">
+            <img id="foto-cidade" src="/images/saopaulo.jpg" alt="São Paulo">
+        </div>
+
+        <div class="price" id="quartos-container">
+            <!-- Cards de quartos gerados pelo JavaScript -->
+        </div>
+
+    </div>
+
+<div class="carrosel">
+        <h1 style="font-size: 40px; text-align: left; margin: 5%;">Acumule mais pontos com os nossos parceiros</h1>
+
+    <div style="margin-bottom: 35px;" class="container-slider">
+        <button id="prev-button" onclick="mudarSlide(-1)">
+            <img src="/images/arrow.png" alt="Anterior">
+        </button>
+
+        <div class="container-images">
+
+            <div class="slider on">
+                <img src="/images/moca3.jpg" alt="Beau x Esfera">
+                <div class="slider-texto">
+                    <p class="slider-subtitulo">Pontue nos dois programas simultaneamente</p>
+                    <p class="slider-titulo">BEAU X ESFERA</p>
+                    <a href="#">Saiba mais! →</a>
+                </div>
+            </div>
+
+            <div class="slider">
+                <img src="/images/moca1.jpg" alt="Beau x Mastercard">
+                <div class="slider-texto">
+                    <p class="slider-subtitulo">Surpreenda com as recompensas em dobro!</p>
+                    <p class="slider-titulo">BEAU X MASTERCARD</p>
+                    <a href="#">Saiba mais! →</a>
+                </div>
+            </div>
+
+            <div class="slider">
+                <img src="/images/moca2.jpg" alt="Beau x LATAM">
+                <div class="slider-texto">
+                    <p class="slider-subtitulo">Descubra o programa de fidelidade da LATAM</p>
+                    <p class="slider-titulo">BEAU X LATAM</p>
+                    <a href="#">Saiba mais! →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="next-button" onclick="mudarSlide(1)">
+            <img src="/images/arrow.png" alt="Próximo">
+        </button>
+    </div>
+</div>
+
+<div class="background">
+    <div class="hotel-app">
+        <img src="/images/hotel.jpg" alt="">
+    </div>
+    <article class="text-app">
+        <div class="text">
+            <p style="font-size: 2.4rem; font-family: 'DM Serif Display', serif; margin: 0 0 20px 20px;">Com o app do <b>Los Beaumont</b>, você:</p>
+            <ul>
+                <li>Economiza nos destinos selecionados</li>
+                <li>Ganha 1 noite de recompensa* a cada 7 diárias de estadia</li>
+                <li>Faz buscas, reserva e aproveite quando quiser</li>
+            </ul>
+            <a href="https://play.google.com/store/games?device=windows">Baixe o app</a><br>
+            <p class="text-t"><u>*Consulte os termos e condições do Los Beaumonts Rewards</u></p>
+        </div>
+    </article>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-app">
+            <div class="lang-selector" onclick="this.classList.toggle('aberto')">
+                    <div class="lang-selected">
+                        <span class="bandeira">🇧🇷</span>
+                        <span id="lang-texto">Português (Brasil)</span>
+                        <span class="seta">&#9660;</span>
+                    </div>
+                <div class="lang-options">
+                    <div class="lang-option" onclick="selecionar(event, '🇺🇸', 'English (US)')">
+                        <span class="bandeira">🇺🇸</span>
+                        <span>English (US)</span>
+                    </div>
+                    <div class="lang-option" onclick="selecionar(event, '🇪🇸', 'Español')">
+                        <span class="bandeira">🇪🇸</span>
+                        <span>Español</span>
+                    </div>
+                    <div class="lang-option" onclick="selecionar(event, '🇧🇷', 'Português (Brasil)')">
+                        <span class="bandeira">🇧🇷</span>
+                        <span>Português (Brasil)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href=""><img src="/images/facebook.svg" alt=""></a>
+            <a href=""><img src="/images/instagram.svg" alt=""></a>
+            <a href=""><img src="/images/twitter-x.svg" alt=""></a>
+            <a href=""><img src="/images/linkedin.svg" alt=""></a>
+        </div>
+
+    </div>
+        <div class="footer-text"></div>
+        <div class="footer-bar"></div>
+        <div class="footer-inf"></div>
+        <div class="footer-logo"></div>
+    </div>
+</footer>
+
+</body>
+</html>
