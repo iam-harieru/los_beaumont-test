@@ -4,4 +4,4 @@ O **Los Beaumont** é um site de uma empresa fictícia de hoteis *Los Beaumont I
 
 Admirem esse projeto e obrigado por verem! :smiley:
 
-![Los Beaumont Logo](https://postimg.cc/wt1Hp5VB)
+[![download.gif](https://i.postimg.cc/25w5n2Ln/download.gif)](https://postimg.cc/wt1Hp5VB)
