@@ -548,7 +548,8 @@ id.foto-cidade {
 /* cada slide: escondido por padrão */
 .slider {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    clip-path: inset(100% 0 0 0);
+    transition: opacity 0.4s ease, clip-path 0.6s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -556,9 +557,9 @@ id.foto-cidade {
     pointer-events: none;
 }
 
-/* slide ativo: visível */
 .slider.on {
     opacity: 1;
+    clip-path: inset(0 0 0 0);
     pointer-events: auto;
 }
 
@@ -621,21 +622,24 @@ id.foto-cidade {
     position: relative;
     margin: 150px auto;
     flex-direction: column;
-    width: 30%;
-    height: 750px;
+    width: 90%;
+    max-width: 630px;   /* no lugar de min-width */
+    height: auto;        /* deixa a altura acompanhar o conteúdo */
     background-color: #f2f2f2;
     border-radius: 35px;
+    overflow: hidden;
 }
 
 .hotel-app {
     display: flex;
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 350px; /* fixa a altura da área da imagem */
 }
 
 .hotel-app img {
     width: 100%;
+    height: 100%;
     border-radius: 35px 35px 0 0;
     object-fit: cover;
 }
@@ -644,8 +648,8 @@ id.foto-cidade {
     display: flex;
     position: relative;
     color: #1d1110;
-    flex-wrap: wrap;
-    margin: 10px auto;
+    flex-direction: column;
+    margin: 10px 20px;
 }
 
 .text ul {
@@ -653,19 +657,21 @@ id.foto-cidade {
     margin-left: 30px;
     margin-bottom: 50px;
 }
+
 .text a {
     position: relative;
+    display: inline-block;
     color: #ffffff;
     background-color: #422929;
     padding: 15px 40px;
     font-weight: 700;
     border-radius: 50px;
-    margin-top: 120px;
+    margin-top: 40px;
     margin-bottom: 20px;
     text-decoration: none;
     text-align: center;
-    align-self: flex-end;
-    transform: translateX(-120%);
+    align-self: center;
+    /* remove o transform */
 }
 
 .text-t {
@@ -779,7 +785,7 @@ footer {
 .footer-text {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(3, 550px);
+    grid-template-columns: repeat(3, 30%);
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
@@ -842,7 +848,7 @@ footer {
 
 .footer-inf-logo {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 30%);
     justify-content: center;
     align-items: center;
     margin: 30px auto;
@@ -853,9 +859,18 @@ footer {
     align-items: center;
     color: #fff;
 }
-.footer-logo {}
 
 @media (max-width: 980px) {
+
+    .nav-links{
+        margin: 0 auto;
+    }
+
+    .logo{
+        align-items: center;
+        margin: 0 75%;
+    }
+
     .citie-content {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -863,6 +878,14 @@ footer {
           "image"
           "price";
     }
+}
+
+@media(max-width: 1044px) {
+
+    .footer-bar button {
+        margin-top: 20px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -896,6 +919,10 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+    
+    .logo {
+        margin: auto;
     }
 
     .login {
@@ -959,7 +986,7 @@ footer {
         flex-direction: column;
         gap: 15px;
         padding: 20px;
-        margin-top: 20px;
+        margin: 20px auto;
     }
 
     .item-extra {
@@ -1016,6 +1043,7 @@ footer {
         width: 80%;
     }
 }
+
 
 @media (max-width: 480px) {
     .search {
