@@ -8,13 +8,14 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="/los-beaumont/site/web.js"></script>
+    <script src="/front/site/web.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,16 +26,16 @@
             <div class="nav-inner">
                 <div class="nav-left">
                     <button class="mobile-menu-btn" aria-label="Abrir menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span>Ajuda</span>
+                        <span>Cadastrar</span>
+                        <span>Logo</span>
                     </button>
-                    <img class="logo" src="/images/losbeaumontlogo.png" alt="Logo Los Beaumont">
+                    <img class="logo" src="/src/images/losbeaumontlogo.png" alt="Logo Los Beaumont">
                 </div>
 
                 <ul class="nav-links">
                     <li><a href="#propriedade"><b>Anuncie propriedade</b></a></li>
-                    <li><a href="#ajuda"><img src="/images/ajudando.png" alt="Ajuda"></a></li>
+                    <li><a href="#ajuda"><img src="/src/images/ajudando.png" alt="Ajuda"></a></li>
                     <li><a class="login" href="/los-beaumont/login/login.html"><b>Cadastre-se / Logar</b></a></li>
                 </ul>
             </div>
@@ -43,10 +44,10 @@
 
     <!-- ===== HERO ===== -->
     <section class="hero">
-        <img class="bg" src="/images/bannerlos.png" alt="Banner do site">
+        <img class="bg" src="/src/images/bannerlos.png" alt="Banner do site">
 
         <div class="overlay">
-            <img class="titulo" src="/images/losbeaumonttext.png" alt="Los Beaumont">
+            <img class="titulo" src="/src/images/losbeaumonttext.png" alt="Los Beaumont">
             <p>Explore seu tipo de quarto, anuncie propriedade e reserve com descontos e ofertas</p>
         </div>
     </section>
@@ -55,7 +56,7 @@
     <div class="search">
 
         <div class="search-box">
-            <img src="/images/pin.png" alt="">
+            <img src="/src/images/pin.png" alt="">
             <div>
                 <h6>Para onde você vai?</h6>
                 <input type="text" name="destination" placeholder="Digite o destino">
@@ -65,7 +66,7 @@
         <div class="divider"></div>
 
         <div class="search-box">
-            <img src="/images/calendar.png" alt="">
+            <img src="/src/images/calendar.png" alt="">
             <div>
                 <h6>Entrada / Saída</h6>
                 <input type="date" name="date">
@@ -75,7 +76,7 @@
         <div class="divider"></div>
 
         <div class="search-box">
-            <img src="/images/group.png" alt="">
+            <img src="/src/images/group.png" alt="">
             <div>
                 <h6>Hóspedes e quartos</h6>
                 <input type="number" name="guests" placeholder="4 hóspedes, 2 quartos">
@@ -83,7 +84,7 @@
         </div>
 
         <button class="search-btn">
-            <img src="/images/search.png" alt="Buscar">
+            <img src="/src/images/search.png" alt="Buscar">
         </button>
 
     </div>
@@ -102,18 +103,18 @@
     <!-- ===== PARCEIROS ===== -->
     <div class="info">
         <p><i>Parceria com <br> 100+ sites</i></p>
-        <img src="/images/booking.png" alt="Logo da Booking.com">
-        <img src="/images/hoteis.png" alt="Logo da Hoteis.com">
-        <img src="/images/expedia.png" alt="Logo da Expedia">
-        <img src="/images/vrbo.png" alt="Logo da Vrbo">
-        <img src="/images/all.png" alt="Logo da Accor Live Limitless">
-        <img src="/images/trip.png" alt="Logo da Trip.com">
-        <img src="/images/decolar.png" alt="Logo da Decolar">
+        <img src="/src/images/booking.png" alt="Logo da Booking.com">
+        <img src="/src/images/hoteis.png" alt="Logo da Hoteis.com">
+        <img src="/src/images/expedia.png" alt="Logo da Expedia">
+        <img src="/src/images/vrbo.png" alt="Logo da Vrbo">
+        <img src="/src/images/all.png" alt="Logo da Accor Live Limitless">
+        <img src="/src/images/trip.png" alt="Logo da Trip.com">
+        <img src="/src/images/decolar.png" alt="Logo da Decolar">
     </div>
 
     <!-- ===== ASSINATURA ===== -->
     <div class="assinatura">
-        <img src="/images/mulher.jpg" alt="Mulher aproveitando o hotel">
+        <img src="/src/images/mulher.jpg" alt="Mulher aproveitando o hotel">
         <h1>BeauClub: o exclusivo clube de assinatura!</h1>
         <p>Tenha momentos de uma realidade exclusiva pensado para você</p>
         <a href="#">Assine já</a>
@@ -147,7 +148,7 @@
         </div>
 
         <div class="city-image">
-            <img id="foto-cidade" src="/images/saopaulo.jpg" alt="São Paulo">
+            <img id="foto-cidade" src="/src/images/saopaulo.jpg" alt="São Paulo">
         </div>
 
         <div class="price" id="quartos-container">
@@ -161,13 +162,13 @@
 
     <div style="margin-bottom: 35px;" class="container-slider">
         <button id="prev-button" onclick="mudarSlide(-1)">
-            <img src="/images/arrow.png" alt="Anterior">
+            <img src="/src/images/arrow.png" alt="Anterior">
         </button>
 
         <div class="container-images">
 
             <div class="slider on">
-                <img src="/images/moca3.jpg" alt="Beau x Esfera">
+                <img src="/src/images/moca3.jpg" alt="Beau x Esfera">
                 <div class="slider-texto">
                     <p class="slider-subtitulo">Pontue nos dois programas simultaneamente</p>
                     <p class="slider-titulo">BEAU X ESFERA</p>
@@ -176,7 +177,7 @@
             </div>
 
             <div class="slider">
-                <img src="/images/moca1.jpg" alt="Beau x Mastercard">
+                <img src="/src/images/moca1.jpg" alt="Beau x Mastercard">
                 <div class="slider-texto">
                     <p class="slider-subtitulo">Surpreenda com as recompensas em dobro!</p>
                     <p class="slider-titulo">BEAU X MASTERCARD</p>
@@ -185,7 +186,7 @@
             </div>
 
             <div class="slider">
-                <img src="/images/moca2.jpg" alt="Beau x LATAM">
+                <img src="/src/images/moca2.jpg" alt="Beau x LATAM">
                 <div class="slider-texto">
                     <p class="slider-subtitulo">Descubra o programa de fidelidade da LATAM</p>
                     <p class="slider-titulo">BEAU X LATAM</p>
@@ -196,14 +197,14 @@
         </div>
 
         <button id="next-button" onclick="mudarSlide(1)">
-            <img src="/images/arrow.png" alt="Próximo">
+            <img src="/src/images/arrow.png" alt="Próximo">
         </button>
     </div>
 </div>
 
 <div class="background">
     <div class="hotel-app">
-        <img src="/images/hotel.jpg" alt="">
+        <img src="/src/images/hotel.jpg" alt="">
     </div>
     <article class="text-app">
         <div class="text">
@@ -246,17 +247,51 @@
         </div>
 
         <div class="footer-links">
-            <a href=""><img src="/images/facebook.svg" alt=""></a>
-            <a href=""><img src="/images/instagram.svg" alt=""></a>
-            <a href=""><img src="/images/twitter-x.svg" alt=""></a>
-            <a href=""><img src="/images/linkedin.svg" alt=""></a>
+            <a href=""><img src="/src/images/facebook.svg" alt=""></a>
+            <a href=""><img src="/src/images/instagram.svg" alt=""></a>
+            <a href=""><img src="/src/images/twitter-x.svg" alt=""></a>
+            <a href=""><img src="/src/images/linkedin.svg" alt=""></a>
         </div>
 
     </div>
-        <div class="footer-text"></div>
-        <div class="footer-bar"></div>
-        <div class="footer-inf"></div>
-        <div class="footer-logo"></div>
+        <div class="footer-text">
+            <div class="foo-text">
+                <a>Quem somos</a><br>
+                <a>Vagas</a><br>
+                <a>Imprensa</a><br>
+                <a>Relações com investidores</a><br>
+                <a>App Los Beaumont - acesse de onde estiver</a><br>
+                <a>Los Beaumont for hoteliers</a><br>
+                <a>Afiliados</a><br>
+                <a>Central de ajuda</a>
+            </div>
+            <div class="foo-text">
+               <a>Descubra como os Beaumont funcionam</a><br>
+               <a>Condições de uso</a><br>
+               <a>Informações legais</a><br>
+               <a>Preferências de cookies</a><br>
+               <a>Aviso de Privacidade</a><br>
+               <a>Informações sobre a DSA</a><br>
+               <a>Programa de divulgação de vulnerabilidades</a>
+            </div>
+
+            <div class="footer-bar">
+                <p>Quer ofertas exclusivas para a sua próxima estadia?</p>
+                <h2>Inscreva-se em nossa newsletter.</h2>
+                <input type="text" placeholder="Digite seu e-mail">
+                <button>Inscreva-se</button>
+            </div>
+        </div>
+        <div class="linebar"></div>
+        <div class="footer-inf-logo">
+            <div class="footer-inf">
+                <p>© 2024 Los Beaumont. Todos os direitos reservados.</p>
+                <p><a style="text-decoration: underline; color: #f2f2f2;" href="#">Termos de uso</a> | <a style="text-decoration: underline; color: #f2f2f2;" href="#">Política de privacidade</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="/src/images/beaumontlogo_2.png" alt="">
+            </div>
+        </div>
     </div>
 </footer>
 
