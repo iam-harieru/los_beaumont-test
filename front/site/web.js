@@ -1,7 +1,7 @@
 // ------ Dados das cidades ------
         const cidades = {
             "sao-paulo": {
-                imagem: "/images/saopaulo.jpg",
+                imagem: "/src/images/saopaulo.jpg",
                 alt: "São Paulo",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 370"   },
@@ -13,7 +13,7 @@
                 ]
             },
             "rio-de-janeiro": {
-                imagem: "/images/riodejaneiro.jpg",
+                imagem: "/src/images/riodejaneiro.jpg",
                 alt: "Rio de Janeiro",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 420"   },
@@ -25,7 +25,7 @@
                 ]
             },
             "curitiba": {
-                imagem: "/images/curitiba.jpg",
+                imagem: "/src/images/curitiba.jpg",
                 alt: "Curitiba",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 300" },
@@ -37,7 +37,7 @@
                 ]
             },
             "maceio": {
-                imagem: "/images/maceio.jpg",
+                imagem: "/src/images/maceio.jpg",
                 alt: "Maceió",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 370"   },
@@ -49,7 +49,7 @@
                 ]
             },
             "salvador": {
-                imagem: "/images/salvador.jpeg",
+                imagem: "/src/images/salvador.jpeg",
                 alt: "Salvador",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 420"   },
@@ -61,7 +61,7 @@
                 ]
             },
             "belo-horizonte": {
-                imagem: "/images/belo-horizonte.jpeg",
+                imagem: "/src/images/belo-horizonte.jpeg",
                 alt: "Belo Horizonte",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 300" },
@@ -73,7 +73,7 @@
                 ]
             },
             "fortaleza": {
-                imagem: "/images/fortaleza.jpeg",
+                imagem: "/src/images/fortaleza.jpeg",
                 alt: "Fortaleza",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 370"   },
@@ -85,7 +85,7 @@
                 ]
             },
             "porto-alegre": {
-                imagem: "/images/porto-alegre.jpg",
+                imagem: "/src/images/porto-alegre.jpg",
                 alt: "Porto Alegre",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 300"   },
@@ -97,7 +97,7 @@
                 ]
             },
             "recife": {
-                imagem: "/images/recife.jpg",
+                imagem: "/src/images/recife.jpg",
                 alt: "Recife",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 300" },
@@ -109,7 +109,7 @@
                 ]
             },
             "natal": {
-                imagem: "/images/natal.jpg",
+                imagem: "/src/images/natal.jpg",
                 alt: "Natal",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 370"   },
@@ -121,7 +121,7 @@
                 ]
             },
             "florianopolis": {
-                imagem: "/images/florianopolis.jpg",
+                imagem: "/src/images/florianopolis.jpg",
                 alt: "Florianópolis",
                 quartos: [
                     { tipo: "Quarto Standard",   preco: "R$ 300"   },
